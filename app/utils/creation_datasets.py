@@ -1,5 +1,8 @@
 import pandas as pd 
-
+"""
+Importation des deux datasets sur l'indicateur de bonheur et le taux de suicide. Nettoyage des deux datasets en renommant les colonnes pour l'un et sélection de l'année 2016 pour 
+l'autre. Puis sauvegarde des deux datasets modifiés.
+"""
 def rename_columns(df_homocide):
     homicid_col = ["Country (or dependent territory, subnational area, etc.)", "Rate", "Count"]
     df_homocide = df_homocide[homicid_col]
