@@ -1,0 +1,27 @@
+version: '3'
+services:
+  mysql-development:
+    image: mysql:8.0.17
+    environment:
+      MYSQL_ROOT_PASSWORD: antoine
+      MYSQL_DATABASE: suicide-app
+    ports:
+      - "3308:3306"
+    volumes:
+      - "./db:/var/lib/mysql:rw"
+  admin:
+    image: adminer
+    ports:
+      - "8080:8080"
+  streamlit:
+    build:
+      context: ./streamlit
+      dockerfile: .docker/Dockerfile
+    image: dataviz/streamlit:0.0.1
+    container_name: streamlitdataviz
+    volumes:
+      - "./streamlit:/streamlit"
+    environment:
+      PYTHONUNBUFFERED: 'true'
+    ports:
+      - "8501:8501"
