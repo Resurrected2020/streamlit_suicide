@@ -1,4 +1,6 @@
-# Création d'une application Streamlit permettant de faire des requêtes SQL sur une base de données comprenant des données sur le suicide, l'indicateur de bonheur et le taux d'homicide de différents pays dans le monde. 
+# Suicide application Streamlit Dataviz
+
+Création d'une application Streamlit permettant de faire des requêtes SQL sur une base de données comprenant des données sur le suicide, l'indicateur de bonheur et le taux d'homicide de différents pays dans le monde. 
 
 Les différentes étapes du projet : 
 - Scraper un tableau sur Wikipédia indiquant le taux d'homicide volontaire pour différents pays dans le monde et conversion des données en dataset
